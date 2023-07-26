@@ -148,3 +148,10 @@ Use case: it is a good practice to define all mixins and variables in one file a
 ```
     @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css);
 ```
+
+# Compilation into CSS
+
+Can be done with the help of Easy LESS extension for VScode, to get the styles recompiled, all that is needed is saving the main .less file (even if no changes were made to it, but to the other .less files)
+
+## Certificate for the course:
+![Certificate](certificate.jpg)
