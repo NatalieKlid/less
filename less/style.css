@@ -1,0 +1,171 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.container-layout {
+  width: 80%;
+  margin: auto;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  box-sizing: border-box;
+  background: #041915;
+  color: #16a085;
+  padding: 40px 0 0 20px;
+  *zoom: 1;
+}
+header .container {
+  width: 80%;
+  margin: auto;
+}
+header .container h1 {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+  font-family: 'PT Serif', serif;
+}
+header .container nav {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+}
+header .container nav ul {
+  padding-left: 0;
+}
+header .container nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 21px;
+}
+header .container nav ul li:first-child {
+  margin-left: 0;
+}
+header:before,
+header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+section {
+  flex-grow: 2;
+  padding-top: 50px;
+  color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  background: #16a085;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #65ead0), color-stop(1, #16a085));
+  background: -ms-linear-gradient(bottom, #65ead0, #16a085);
+  background: -moz-linear-gradient(center bottom, #65ead0 0%, #16a085 100%);
+  background: -o-linear-gradient(#16a085, #65ead0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#16a085', endColorstr='#65ead0', GradientType=0);
+  *zoom: 1;
+}
+section aside {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+}
+section aside img {
+  -webkit-border-top-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 50%;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 100%;
+  border-top: solid 1px #16a085;
+  border-left: solid 1px #16a085;
+  border-right: solid 1px #16a085;
+  border-bottom: solid 1px #16a085;
+  -webkit-box-shadow: 6px 4px 10px rgba(22, 160, 133, 0.2);
+  -moz-box-shadow: 6px 4px 10px rgba(22, 160, 133, 0.2);
+  box-shadow: 6px 4px 10px rgba(22, 160, 133, 0.2);
+}
+section article {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+}
+section article h2 {
+  font-size: 42px;
+}
+section article p {
+  font-size: 24px;
+}
+section:before,
+section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+footer {
+  background: #041915;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+footer .container {
+  width: 80%;
+  margin: auto;
+  margin-left: 170px;
+}
+footer .container ul {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+  list-style-type: none;
+  font-size: 21px;
+}

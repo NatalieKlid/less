@@ -1,0 +1,10 @@
+.container-layout {
+  width: 80%;
+  margin: auto;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
