@@ -77,3 +77,74 @@ Note: mixins can be used inside other mixins (this works in SCSS too):
         .regularText;
     }
 ```
+
+It is possible to set a default value for a mixin taking parameters:
+
+```
+    .border-radius(@radius: 10px) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        -o-border-radius: @radius;
+        -ms-border-radius: @radius;
+        border-radius: @radius;
+    }
+
+    .box {
+        .border-radius; // default of 10px is applied
+    }
+```
+
+Mixins can accept multiple parameters:
+
+```
+    .border(@width:1px, @style: solid, @color: #000){
+        border: @width @style @color;
+    }
+
+    .box {
+        .border; // apply border mixin with default parameters
+    }
+```
+
+# Guarded mixins
+Mixins with condition
+
+```
+.set-text-color (@bg-color) when (lightness(@bg-color) >= 50%) { 
+  color: @dark;
+  background: @bg-color;
+}
+
+.set-text-color (@bg-color) when (lightness(@bg-color) < 50%) { 
+  color: @light;
+  background: @bg-color;
+}
+
+    header {
+        .set-text-color(#000); // 2nd rule will be applied
+    }
+    footer {
+        .set-text-color(#fff); // 1st rule will be applied
+    }
+```
+
+# Built-in functions
+
+```
+
+    @colorToUse: #f3c;
+
+    color: lighten(@colorToUse, 20%);
+    color: darken(@colorToUse, 20%);
+
+```
+
+[Full reference for built-in functions](https://lesscss.org/functions)
+
+# Importing files
+
+Use case: it is a good practice to define all mixins and variables in one file and then import it to the others with the @import directive
+
+```
+    @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css);
+```
